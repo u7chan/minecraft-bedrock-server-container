@@ -1,6 +1,6 @@
 # minecraft-bedrock-server-container
 
-## Quickstart
+## Quick start
 
 ```
 docker-compose up -d
