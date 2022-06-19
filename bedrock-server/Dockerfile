@@ -1,6 +1,7 @@
 FROM debian:11.3-slim
 
 ARG VERSION
+# https://www.minecraft.net/en-us/download/server/bedrock
 ENV DOWNLOAD_URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-${VERSION}.zip"
 
 WORKDIR /home
