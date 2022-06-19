@@ -11,11 +11,11 @@ EXPOSE 19132/udp
 COPY *.sh /home
 
 RUN apt update && apt-get install -y \
-  curl  \
+  curl \
   unzip && \
   curl -o bedrock-server.zip -LO ${DOWNLOAD_URL} --output bedrock-server.zip && \
   unzip bedrock-server.zip && \
-  rm  bedrock-server.zip && \
+  rm bedrock-server.zip && \
   rm bedrock_server_symbols.debug && \
   echo "\n""emit-server-telemetry=true" >> server.properties 
 
