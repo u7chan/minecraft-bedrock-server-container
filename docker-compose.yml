@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./bedrock-server/Dockerfile
       args:
-        - VERSION=1.19.1.01
+        - VERSION=1.19.73.02
     ports:
       - 19132:19132/udp
     volumes:
